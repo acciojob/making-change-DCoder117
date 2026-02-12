@@ -1,6 +1,5 @@
 const makeChange = (c) => {
   // your name here
-	let obj = {
 		let quarter = Math.floor(c/25);
 		let c = c%25;
 		let dime = Math.floor(quarter/10);
@@ -9,8 +8,7 @@ const makeChange = (c) => {
 		let c = c%5;
 		let penny = math.floor(nickel/1);
 		let c = c%1;
-	}
-	return obj;
+	return {quarter, nickel, dime, penny};
 };
 
 // Do not the change the code below
